@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' href='images/favicon.ico' type='image/x-icon'/ >
+    <title>GD van der Westhuizen</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <! -- Landing Page -->
+    <div class="intro" id="top">
+        <div id="intro_h1" class="animated fadeInDown delay-05s">Hi, I'm GD  van der Westhuizen.</div><br/>
+        <div id="intro_h2" class="animated fadeInUp delay-05s">I'm a Full-Stack Developer.</div>
+    </div>
+    
+    <! -- Navigation Bar -->
+    <a href="#top">
+        <ul id="navs">
+                <li><img src="images/gd_logo.png" width="32px" hight="32px"/></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#about_me">ABOUT</a></li>
+                <li><a id="my_name" href="#top">GD VAN DER WESTHUIZEN</a></li>
+        </ul>
+    </a>
+    
+    <! -- About Section -->
+    <div id="about">
+        <h1 id="about_me">ABOUT ME</h1>
+        <img src="images/my_photo.png" alt="GD van der Westhuizen"><br><br><br>
+        <p>
+            My name is G.D. van der Westhuizen and I am a full-stack software developer. My personality
+            type is INTJ-A and I am passionate about all things technology related and always eager to learn.
+            I work well under pressure and can keep a laser-sharp focus during stressful situations. I like a
+            challenge and I make it my mission to better every system or workspace. I'm currently a third
+            year student at <a id="NWU" href="http://www.nwu.ac.za/"  target="_blank" >North-West University</a>
+            pursuing a degree in information technology and computer science. I aspire toward a career as a professional problem solver,
+            I want to create the solutions to tomorrows problems.
+        </p><br><br><br>
+        <div id="summary">
+            <h2>SUMMARY</h2>
+            <div class="about_flex">
+                <div id="Personality_Sum_ico">
+                    <img id="summary_ico" src="images/Personality_Sum_ico.png" alt="icon" width="170px" height="170px">
+                    <figcaption>Assertive Architect</figcaption>
+                </div>
+                <div id="Challenges_Sum_ico">
+                    <img id="summary_ico" src="images/Challenges_Sum_ico.png" alt="icon" width="170x" height="170px">
+                    <figcaption>Love Challenges</figcaption>
+                </div>
+                <div id="Problem_Sum_ico">
+                    <img id="summary_ico" src="images/Problem_Sum_ico.png" alt="icon" width="170px" height="170px">
+                    <figcaption>Problem Solver</figcaption>
+                </div>
+            </div>
+        </div><br><br><br>
+    </div>
+
+    <! -- Experience Section -->
+    <div id="experience">
+        <h1>EXPERIENCE</h1>
+        <p>
+            I've been developing software for the last 6 years now,
+            and I'm always eager to learn more in this fast paced industry.
+        </p>
+        <h2>TECHNOLOGIES I'VE WORKED WITH:</h2>
+        <div id="related_tech">
+            <div class="experience_flex">
+                    <img id="experience_ico" src="images/html.png" alt="icon" width="170px" height="170px">
+                    <img id="experience_ico" src="images/css.png" alt="icon" width="170x" height="170px">
+                    <img id="experience_ico" src="images/js.png" alt="icon" width="170px" height="170px">
+                    <img id="experience_ico" src="images/angular.png" alt="icon" width="170px" height="170px">
+                    <img id="experience_ico" src="images/csharp.png" alt="icon" width="170px" height="170px">
+                    <img id="experience_ico" src="images/java.png" alt="icon" width="170px" height="170px">
+                    <img id="experience_ico" src="images/python.png" alt="icon" width="170px" height="170px">
+                    <img id="experience_ico" src="images/sqlserver.png" alt="icon" width="170px" height="170px">
+                    <img id="experience_ico" src="images/github.png" alt="icon" width="170px" height="170px">
+                    <img id="experience_ico" src="images/photoshop.png" alt="icon" width="170px" height="170px">
+                    <img id="experience_ico" src="images/linux.png" alt="icon" width="170px" height="170px">
+                    <img id="experience_ico" src="images/docker.png" alt="icon" width="170px" height="170px">
+                    <img id="experience_ico" src="images/aws.png" alt="icon" width="170px" height="170px">
+                    <img id="experience_ico" src="images/azure.png" alt="icon" width="170px" height="170px">
+            </div>
+        </div><br><br><br>
+    </div>
+
+    <! -- My CV Download Section -->
+    <div class="cv_section box">
+        <div><h1 id="cv_heading" >CHECK OUT MY RÉSUMÉ!</h1></div>
+        <a id="cv_btn_link" href="Curriculum Vitea of GD van der Westhuizen.pdf" download ><div class="grow" id="cv_btn">Grab A Copy</div></a>
+    </div>
+
+    <! -- Work Section -->
+    <div id="work" class="work_section_box">
+        <h1>WORK</h1>
+        <p>
+            This is the section where I will be showcasing all the projects I have worked on
+            in the past so you can get a feel for what I can do, but since I do not have past projects
+            at this stage, this technical cv should serve as a pretty good example of what I am capable of.
+            So instead of showcasing past projects, let's rather have some fun with restful API's.
+        </p>
+        
+        <div class="nasa_api_container">
+            <h2>I love space and exploring the unknown so let's use the NASA API to pull some images of Mars from the mars rover:</h2>
+            <div class="nasa"></div>
+            <script src="nasaAPI.js"></script>
+        </div>
+
+        <div class="my_weather">
+            <h2>The weather here in Upington where I live is something else, so I thought you might find it interesting:</h2>
+            <div class="weather"></div>
+            <script src="weatherAPI.js"></script>
+        </div>
+
+        <div class="fact_section">
+            <h2>FACT ABOUT TODAYS DATE IN HISTORY:</h2>
+            <div class="fact">
+                <div id="random_fact"></div>
+                <div id="myBtn">GIVE ME ANOTHER FACT</div>
+            </div>
+            <script src="factofthedayAPI.js"></script>
+        </div>
+        
+    </div>
+    
+    <! -- The Contact Section -->
+    <div id="contact">
+        <br/><br/><br/>
+        <h2>CONTACT</h2>
+        <div class="contact_flex">
+        <a href="mailto:gdvanderw@gmail.com" ><h2><img class="flip" src="images/email.png" ></h2></a>
+        </div>
+        
+    </div>
+    <! -- Footer Section -->
+    <footer>
+        GD van der Westhuizen &copy; 2020
+     </footer>
+</body>
+</html>

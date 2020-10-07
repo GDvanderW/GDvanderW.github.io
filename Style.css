@@ -1,0 +1,688 @@
+  /* ------------------------------------ Global Styles ----------------------------------- */
+:root{
+    background-color: #333;
+    font-size: 62.5%;
+}
+@font-face {
+    font-family: 'aileronthin';
+    src: url('fonts/aileron-thin-webfont.woff2') format('woff2'),
+         url('fonts/aileron-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'aileronthin';
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+body, html {
+    margin: 0;
+  }
+h1{
+    color: #333;
+    font-size: 4rem;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin: 2rem;
+    margin-top: 5rem;
+}
+h2{
+    color: #333;
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin: 2rem;
+}
+p{
+    font-family: Helvetica, sans-serif;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 2.5rem;
+    margin-left: 23rem;
+    margin-right: 23rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+@media only screen and (max-width: 1245px) {
+    p{
+        font-size: 1.8rem;
+        margin-left: 15rem;
+        margin-right: 15rem;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+}
+@media only screen and (max-width: 1085px) {
+    p{
+        font-size: 1.8rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+}
+@media only screen and (max-width: 610px) {
+    p{
+        letter-spacing: 0;
+        font-size: 1.6rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+}
+#top{
+    height: 100vh;
+}
+
+  /* ---------------------------------- Landing Page Styles ---------------------------------- */
+.intro {
+
+    /* The image used */
+    background-image: url("images/bg.jpg");
+    background-attachment: fixed;
+    text-align: center;
+
+    /* Center and scale the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* Center and scale the heading text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+#intro_h1{
+    
+    /* Set heading size, wight and color */
+    color: #FFF;
+    font-size: 6rem;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+#intro_h2{
+
+    /* Set sub-heading size, wight and color */
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+@media only screen and (max-width: 610px) {
+    #intro_h1{
+    
+        /* Set heading size, wight and color for mobile*/
+        color: #FFF;
+        font-size: 3rem;
+        font-weight: 100;
+        letter-spacing: 3px;
+    }
+    #intro_h2{
+    
+        /* Set sub-heading size, wight and color for mobile*/
+        color: #FFF;
+        font-size: 12px;
+        font-weight: 100;
+        letter-spacing: 3px;
+    }
+}
+@keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+}
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+}
+.fadeInDown{
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+.fadeInUp{
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.animated{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.delay-05s{
+    animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+}
+
+  /* ---------------------------------- Navigation bar Styles ---------------------------------- */
+ul {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    z-index: 2;
+  }
+  
+li img{
+    float: left;
+    margin: 1rem;
+  }
+  
+li a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2.5rem;
+    
+  }
+  a{
+    transition: color 200ms ease-in-out;
+}
+#my_name{
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2.5rem;
+  }
+#my_name:hover {
+    transition:all 0.5s ease-in-out;
+    background-color: #32CD32;
+    color:#fff;
+    font-size: 2.5rem;
+  }
+li a:hover {
+    transition:all 0.5s ease-in-out;
+    background-color: #32CD32;
+    color:#fff;
+    font-size: 2.5rem;
+  }
+  li img:hover {
+    cursor: pointer;
+  }
+  
+@media only screen and (max-width: 930px) {
+    #my_name {
+    display: none;
+      }
+}
+  @media only screen and (max-width: 610px) {
+    li a{
+        display: none;
+      }
+    #navs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;    
+    }
+    li img {
+        width: 32px;
+        height: 32px;
+      }
+    
+}
+
+  /* ---------------------------------- About Section Styles ---------------------------------- */
+
+  #about{
+    background-color: #e1efff;
+    text-align: center;
+    height: 100%;
+
+    /* Center and scale the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* Center and scale the heading text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+  }
+  #NWU{
+    text-decoration: none;
+    color: purple;
+    font-style: oblique;
+    font-weight: 900;
+  }
+  #summary{
+      
+    width: 80rem;
+      height: 30rem;
+      background-color: #c8d3df;
+  }
+
+  .about_flex {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+  .about_flex figcaption{
+      color: #734d60ff;
+      font-size: 2rem;
+      margin-top: 1rem;
+  }
+  #summary_ico{
+      margin-left: 3rem;
+      margin-right: 3rem;
+  }
+  @media only screen and (max-width: 900px) {
+    #summary{
+      
+        width: 60rem;
+          height: 22.5rem;
+      }
+      #summary_ico{
+        margin-left: 2.25rem;
+        margin-right: 2.25rem;
+        width: 100px;
+        height: 100px;
+    }
+    .about_flex figcaption{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    #summary{
+      
+        width: 100%;
+          height: 60rem;
+      }
+      #summary_ico{
+        width: 100px;
+        height: 100px;
+    }
+    .about_flex {
+        display: block;
+        text-align: center;
+      }
+      .about_flex figcaption{
+        margin-bottom: 3rem;
+        font-size: 2rem;
+    }
+}
+
+ /* ---------------------------------- Experience Section Styles ---------------------------------- */
+ #experience{
+    background-color: #7292b6;
+    
+    text-align: center;
+    height: 100%;
+
+    /* Center and scale the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* Center and scale the heading text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+  }
+  #experience h1{
+      color: snow;
+      margin-top: 7rem;
+  }
+  #experience h2{
+    color: snow;
+}
+  #experience p{
+    color: snow;
+    font-family: 'aileronthin';
+    text-align: center;
+}
+#related_tech{
+      
+    width: 80rem;
+      height: 55rem;
+      background-color: #c8d3df;
+  }
+
+  .experience_flex {
+    display: table;
+    
+    text-align: center;
+  }
+  
+#experience_ico{
+    margin: 3rem;
+    width: 100px;
+    height: auto;
+}
+@media only screen and (max-width: 900px) {
+    #related_tech{
+      
+        width: 60rem;
+          height: 68rem;
+      }
+      #experience_ico{
+        margin-left: 2.25rem;
+        margin-right: 2.25rem;
+        width: 100px;
+        height: auto;
+    }
+    
+}
+@media only screen and (max-width: 610px) {
+    #related_tech{
+      
+        width: 100%;
+          height: auto;
+      }
+      #experience_ico{
+        margin-left: 2.25rem;
+        margin-right: 2.25rem;
+        width: 80px;
+        height: auto;
+    }
+    
+}
+
+/* ---------------------------------- My CV Section Styles ---------------------------------- */
+.box{
+    width: 100%;
+    height: 300px;
+    padding: 40px 60px;
+    color: white;
+    text-align: center;
+}
+
+.cv_section{
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+      background-image: url('images/workspace.jpg');
+      background-attachment: fixed;/* maak die back img darker*/
+      background-size: cover;
+}
+.cv_section::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.5);
+}
+#cv_heading{
+    display: flexbox;
+    position: relative;
+    color: #ffffff;  
+    font-size: 4rem;
+    line-height: 0.9;
+    text-align: center;
+}
+#cv_btn{
+    
+    display: flexbox;
+    position: relative;
+    color: #ffffff;  
+    font-size: 2rem;
+    line-height: 0.9;
+    text-align: center;
+    border: solid;
+    border-color: #ffffff;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+#cv_btn:hover{
+    transition:all 0.6s ease-in-out;
+    background-color: rgba(255,255,255,0.5);
+}
+#cv_btn_link{
+    text-decoration: none;
+}
+.grow:hover{
+    transition:all 0.6s ease;
+    transform: scale(1.1);
+}
+@media only screen and (max-width: 610px) {
+    #cv_heading{
+        font-size: 2.5rem;
+    }
+}
+/* ---------------------------------- Work Section Styles ---------------------------------- */
+.work_section_box{
+  background-color: #e1efff;
+  text-align: center;
+  height: 100%;
+
+    /* Center and scale the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* Center and scale the heading text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+}
+.work_section_box p{
+  font-family: 'aileronthin';
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.work_section_box h2{
+  text-align: center;
+  margin-left: 22rem;
+  margin-right: 22rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* ---------------------------------- NASA API Styles ---------------------------------- */
+.nasa_api_container{
+  border-top: solid;
+  border-bottom: solid;
+  border-color: #ffffff;
+  background-color: #f4f9ff;
+}
+.cam_name{
+  font-size: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+#f_cam{
+  height: 600px;
+  width: auto;
+}
+#r_cam{
+  height: 600px;
+  width: auto;
+}
+#b_cam{
+  height: auto;
+  width: 600px;
+}
+
+/* ---------------------------------- Weather API Styles ---------------------------------- */
+.my_weather{
+  background-color: #6bb0ff;
+}
+.my_weather h2{
+  color: #ffffff;
+}
+.weather{
+  display: flexbox;
+  text-align: center;
+  font-size: 2rem;
+  height: 400px;
+}
+.weather img{
+  width: 400px;
+  height: 296px;
+}
+.weather .city{
+  color: #ffffff;
+}
+.weather .temp, .weather .temp_max{
+  color: #ffffff;
+}
+
+/* ---------------------------------- Fact of Date API Styles ---------------------------------- */
+.fact{
+  width: 100%;
+}
+.fact_section{
+  background-color: #e1efff;
+  text-align: center;
+  height: 100%;
+
+    /* Center and scale the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* Center and scale the heading text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+}
+#random_fact{
+  font-family: 'aileronthin';
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5rem;
+  margin-left: 22rem;
+  margin-right: 22rem;
+}
+#myBtn{
+    display: flexbox;
+  position: relative;
+  color: #4585b9;  
+  font-size: 2rem;
+  line-height: 0.9;
+  text-align: center;
+  border: solid;
+  border-color: #4585b9;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-left: 40rem;
+  margin-right: 40rem;
+  margin-bottom: 5rem;
+}
+#myBtn:hover{
+  transition:all 0.6s ease-in-out;
+  background-color: rgba(255, 251, 0, 0.7);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px) {
+  .my_weather h2, .fact_section h2, .nasa_api_container h2, #random_fact, #myBtn{
+    margin-right: 2rem;
+    margin-left: 2rem;}
+}
+@media only screen and (max-width: 610px) {
+  #f_cam{
+    height: 300px;
+    width: auto;
+  }
+  #r_cam{
+    height: 300px;
+    width: auto;
+  }
+  #b_cam{
+    height: auto;
+    width: 300px;
+  }
+  
+}
+@media only screen and (max-width: 410px) {
+  .weather img{
+    width: 200px;
+    height: 148px;
+  }
+  .my_weather h2, .fact_section h2, .nasa_api_container h2{
+    font-size: 2rem;
+  }
+  .weather{
+    height: 250px;
+  }
+}
+/* ---------------------------------- Contact Styles ---------------------------------- */
+#contact{
+  background-color: #6d88c4;
+  height: 200px;
+}
+.flip:hover{
+  transition:all 0.5s ease;
+  transform: rotateZ(-360deg);
+}
+
+#contact img{
+  margin: 0;
+  width: 64px;
+  height: 64px;
+  vertical-align:middle;
+  
+}
+#contact h2{
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  
+}
+.contact_flex a{
+  display: block;
+  text-decoration: none;
+}
+
+/* ---------------------------------- Footer Styles ---------------------------------- */
+footer{
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: royalblue;
+  color: #ffffff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 100%;
+}
