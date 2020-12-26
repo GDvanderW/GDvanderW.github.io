@@ -1,4 +1,4 @@
-const weatherApiUrl = `http://api.openweathermap.org/data/2.5/weather?q=Upington&units=metric&appid=655529df795a674114f7b77d422adce8`
+const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Upington&units=metric&appid=655529df795a674114f7b77d422adce8`
 
 fetch(weatherApiUrl)
     .then( (data) => {
